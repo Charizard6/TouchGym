@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.locker">
+	<resultMap id="lockerResult" type="lockerVO">
+		<result property="lockerNum" column="lockerNum" />
+		<result property="lockerPWD" column="lockerPWD" />
+		<result property="lockerMember" column="lockerMember" />
+	</resultMap>
+	<!-- <resultMap id="memResult" type="java.util.HashMap"> <result property="id" 
+		column="id" /> <result property="pwd" column="pwd" /> <result property="name" 
+		column="name" /> <result property="email" column="email" /> <result property="joinDate" 
+		column="joinDate" /> </resultMap> -->
+	<update id="modLocker"  parameterType="lockerVO">
+		<![CDATA[
+	     update touchgym.t_locker
+	     set LockerMember=#{lockerMember}, LockerPWD=#{lockerPWD}
+	     where
+	     LockerNum=#{lockerNum}
+      ]]>       
+	</update>
+	
+	<select id="selectAllLocker" resultMap="lockerResult">
+      <![CDATA[
+         select LockerNum, LockerPWD, LockerMember from touchgym.t_locker
+      ]]>
+	</select>
+
+</mapper>
