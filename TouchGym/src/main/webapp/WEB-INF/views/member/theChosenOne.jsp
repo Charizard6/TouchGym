@@ -339,7 +339,7 @@ ul {
 			$('#modal').css('display','flex');
 			$('#modal').css('height','1000px');
 			$('#modal-window').css('height','700px');
-			$('#modal-window').css('width','1200px');
+			$('#modal-window').css('width','1250px');
 			$('.content').load("${contextPath}/member/locker.do");
 			title.innerText = "사물함 현황";
 		})
@@ -357,7 +357,7 @@ ul {
 			$('#modal').css('display','flex');
 			$('#modal').css('height','1000px');
 			$('#modal-window').css('height','700px');
-			$('#modal-window').css('width','1200px');
+			$('#modal-window').css('width','1250px');
 			$('.content').load(loc);
 		}
 	</script>
