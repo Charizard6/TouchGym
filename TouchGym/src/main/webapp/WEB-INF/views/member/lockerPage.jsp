@@ -21,7 +21,7 @@ request.setCharacterEncoding("UTF-8");
 .blackmem {
 	margin-top: 20px;
 	width: 100px;
-	height: 80px;
+	height: 70px;
 	background: black;
 	color: white;
 	font-size: 15px;

@@ -338,8 +338,8 @@ ul {
 		Locker.addEventListener("click", e =>{
 			$('#modal').css('display','flex');
 			$('#modal').css('height','1000px');
-			$('#modal-window').css('height','900px');
-			$('#modal-window').css('width','1400px');
+			$('#modal-window').css('height','700px');
+			$('#modal-window').css('width','1200px');
 			$('.content').load("${contextPath}/member/locker.do");
 			title.innerText = "사물함 현황";
 		})
@@ -356,8 +356,8 @@ ul {
 			title.innerText="사물함";
 			$('#modal').css('display','flex');
 			$('#modal').css('height','1000px');
-			$('#modal-window').css('height','900px');
-			$('#modal-window').css('width','1400px');
+			$('#modal-window').css('height','700px');
+			$('#modal-window').css('width','1200px');
 			$('.content').load(loc);
 		}
 	</script>
